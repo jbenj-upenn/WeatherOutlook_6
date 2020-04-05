@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get That Weather Update!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <!-- <h1 class="title">
+                Welcome to Your Local Weather.
+            </h1>
+            <h3>Please don't go outside and enjoy it during the COVID-19 pandemic.</h3>
+            <p class="subtitle">
+
+            </p>--> -->
+
+            <!--add logo for the site here later-->
+            <section class="hero has-background-dark">
+                <div class="hero-body">
+                    <!--work on including a logo here
+                    <figure class="media-right">
+                        <span class="icon is-medium">
+                            <i class="fa-2x fas fa-city"></i>
+                        </span>
+                    </figure>
+                -->
+                    <h1 class="title has-text-white">
+                        Welcome to Your Local Weather.
+                    </h1>
+                    <h3 class="has-text-light">Please don't go outside and enjoy it during the COVID-19 pandemic.</h3>
+                    <div class="container">
+                        <!--look back to unit 2 on relative pathways to link the image
+                        <figure class="image">
+                            <img src="strikingWeather.png">
+                        </figure>-->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------END HERO----------------- -->
+            <section class="section has-background-light">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media notification is-primary">
+                                <figure class="media-left">
+                                    <span class="icon is-medium">
+                                        <i class="fa-2x fas fa-city"></i>
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">City Search</h1>
+                                            <p class="is-size-5">
+                                                <h3 class="is-size-5">City</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media notification is-info">
+                                <figure class="media-left">
+                                    <span class="icon is-medium">
+                                        <!--Can't get this icon to display <i class="fa-2x fas fa-cloud-sun-rain"></i> -->
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">Today's Weather</h1>
+                                            <p class="is-size-5">
+                                                <h3 class="is-size-5">Weather</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media notification is-link">
+                                <figure class="media-left">
+                                    <span class="icon is-medium">
+                                        <i class="fa-2x fas fa-calendar-alt"></i>
+                                    </span>
+                                </figure>
+                                <!--may need to remove the media-->
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">5-Day Forecast</h1>
+                                            <p class="is-size-5">
+                                                <h3 class="is-size-5">5-Day Forecast</h3>
+                                            </p>
+                                    </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-multiline">
+                        <div class="column is-one-third">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <i class="fa-lg fas fa-city has-text-primary"></i>
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">City Search</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">City</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column is-one-third">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <!--Can't get this icon to display <i class="fa-lg fas fa-cloud-sun-rain"></i> -->
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">Today's Weather</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">Weather</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column is-one-third">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <i class="fa-lg fas fa-calendar-alt has-text-info"></i>
+                                    </span>
+                                </figure>
+                                <!--may need to remove the media-->
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">5-Day Forecast</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">5-Day Forecast</h3>
+                                            </p>
+                                    </div>
+                            </article>
+                        </div>
+                        <div class="column is-one-third">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <i class="fa-lg fas fa-city has-text-primary"></i>
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">City Search</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">City</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column is-one-third">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <!--Can't get this icon to display <i class="fa-lg fas fa-cloud-sun-rain"></i> -->
+                                    </span>
+                                </figure>
+
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">Today's Weather</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">Weather</h3>
+                                            </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="column is-one-thirds">
+                            <article class="media notification has-background-white">
+                                <figure class="media-left">
+                                    <span class="icon">
+                                        <i class="fa-lg fas fa-calendar-alt has-text-info"></i>
+                                    </span>
+                                </figure>
+                                <!--may need to remove the media-->
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h1 class="title is-size-4">5-Day Forecast</h1>
+                                            <p class="subtitle is-size-5">
+                                                <h3 class="is-size-5">5-Day Forecast</h3>
+                                            </p>
+                                    </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+</body>
+
+</html>
