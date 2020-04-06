@@ -10,6 +10,7 @@ The User is prompted to enter the city name of her/his choice. After clicking "T
 4. Predicted Max and Min Temperatures
 5. Humidity
 6. Wind Speed
+7. Ten buttons utilize a callback function that allows a user to click on the popular cities associated with said buttons to return fast weather data
 
 Challenges remaining:
 1. Implementation of a 5-day forecast for the city in question

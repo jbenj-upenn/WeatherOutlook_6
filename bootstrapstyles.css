@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+/*min-height and display flex were efforts to stop the problems I was having with the footer floating around*/
 body {
     margin: 0;
     font-family: basic-sans, sans-serif;
@@ -14,6 +15,7 @@ body {
     
 }
 
+/*small styling of the search box and column sections*/
 #rowDiv {
     margin: auto;
     text-align: center;
@@ -85,6 +87,7 @@ input[type="text"]{
     position: relative;
     } */
 
+    /*position: fixed keeps the footer from floating to the middle of the screen, as it was with the absolute value*/
     .footer {
         position: fixed;
         bottom: 0;
@@ -95,6 +98,7 @@ input[type="text"]{
     }
 
     /* to create a layer effect and append the footer to the bottom so it stops going behind the popular destinations row */
+
 .footer .footer-bottom {
     background-color: rgb(62, 151, 151);
     color: white;

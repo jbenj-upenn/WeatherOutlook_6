@@ -33,6 +33,8 @@
 
 $(document).ready(function () {
 
+    //rearranged things so that the $.ajax call is in a function that we can utilize later
+    
     function getWeather (city){
         $.ajax({
             url: "https://api.openweathermap.org/data/2.5/weather?q= " + city + "&units=imperial" + "&appid=3a1badee57acecc35569f0a56b894c72",
