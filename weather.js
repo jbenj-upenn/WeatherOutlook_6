@@ -33,27 +33,56 @@
 
 $(document).ready(function () {
 
+    function getWeather (city){
+        $.ajax({
+            url: "https://api.openweathermap.org/data/2.5/weather?q= " + city + "&units=imperial" + "&appid=3a1badee57acecc35569f0a56b894c72",
+            method: "GET",
+            dataType: "jsonp",
+            success: function (data) {
+                console.log(data);
+                var widget = display(data);
+    
+                $("#showWeather").html(widget);
+    
+                //empty the input field after the user clicks search
+                $("#cityWeather").val('');
+            }
+    
+        });
+    }
+
+    //grabs info from the popular destination buttons
+
+    $(".list-group-item").on("click", function() {
+        // console.log(this)
+        var cityName = $(this).text()
+        console.log(cityName)
+        getWeather(cityName)
+
+    })
+
     $('#getWeather').click(function () {
 
         var city = $("#cityWeather").val();
 
         if (city != '') {
 
-            $.ajax({
-                url: "https://api.openweathermap.org/data/2.5/weather?q= " + city + "&units=imperial" + "&appid=3a1badee57acecc35569f0a56b894c72",
-                method: "GET",
-                dataType: "jsonp",
-                success: function (data) {
-                    console.log(data);
-                    var widget = display(data);
+            getWeather(city)
+            // $.ajax({
+            //     url: "https://api.openweathermap.org/data/2.5/weather?q= " + city + "&units=imperial" + "&appid=3a1badee57acecc35569f0a56b894c72",
+            //     method: "GET",
+            //     dataType: "jsonp",
+            //     success: function (data) {
+            //         console.log(data);
+            //         var widget = display(data);
 
-                    $("#showWeather").html(widget);
+            //         $("#showWeather").html(widget);
 
-                    //empty the input field after the user clicks search
-                    $("#cityWeather").val('');
-                }
+            //         //empty the input field after the user clicks search
+            //         $("#cityWeather").val('');
+            //     }
 
-            });
+            // });
 
         } else {
             $("#error").html("Fill in this Field, Fool!");
@@ -62,6 +91,10 @@ $(document).ready(function () {
     });
 
 });
+
+
+
+
 
 function display(data) {
     return "<h2 'font-size:45px; font-weight: bold;' class='text-center'>You're Locked in to the Weather in " + data.name + " in that " + data.sys.country + " (country code...figure it out) </h2>" +
