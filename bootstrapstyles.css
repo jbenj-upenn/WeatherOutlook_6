@@ -1,0 +1,19 @@
+#rowDiv {
+    margin: auto;
+    text-align: center;
+    width: 48%;
+}
+
+input[type="text"]{
+    height: 50px;
+    font-size: 20px;
+}
+
+#searchWeather {
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 5px;
+
+}
