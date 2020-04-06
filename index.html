@@ -13,31 +13,44 @@
 </head>
 
 <body>
-    <div class="jumbotron" style="margin-bottom:0px; color:white; background-color:rgb(25, 61, 61);">
-        <h2 class="text-center" style="font-size:50px; font-weight:600;">You Need the Weather? Please, Allow Us to Help!</h2>
+    <div class="jumbotron" style="border-radius:15%; margin-bottom:0px; color:white; background-color:rgb(25, 61, 61);">
+        <h2 class="text-center" style="font-size:50px; font-weight:600;">You Need the Weather? Please, Allow Us to Help!
+        </h2>
     </div>
 
-</h1>
-<h3 style="background-color: rgb(231, 33, 49);">You like nice weather? We like nice weather! <br> But, <span><strong>PLEASE </strong></span>limit how often go outside and enjoy it during the COVID-19 pandemic.</h3>
-    
+    </h1>
+    <h3 style="background-color: rgb(231, 33, 49);">You like nice weather? We like nice weather! <br> But,
+        <span><strong>PLEASE </strong></span>limit how often go outside and enjoy it during the COVID-19 pandemic.</h3>
+
     <div class="container" style="height:650px;">
-        
+
         <div class="row" style="margin-bottom:20px;">
-            <h3 class="text-center text-primary">What City You Looking For, Traveller?</h3>
-            
-        </div>
+           <!--was able to set up two columsn, but I need to create borders and/or background colors and a heading for the column on the right-->
+           <!--I want to create a sub-row on the left for a series of auto-search cities-->
+           
+            <div class="col-md-4">
+                <h3 class="text-center text-primary">What City You Looking For, Traveller?</h3>
 
-        <div class="row form-group form-inline" id="rowDiv">
-            <span class="icon is-medium">
-                <i class="fa-3x fas fa-city"></i>
-            </span>
-            <input type="text" style="margin-bottom:20px" name="city" id="cityWeather" class="form-control" placeholder="Enter Your City">
-            <button id="getWeather" class="btn btn-primary" style="height: 52px">Get Your Current Weather and Forecasts!</button>
-            
-        </div>
+                <div class="row form-group form-inline" id="rowDiv">
+                    <span class="icon is-medium">
+                        <i class="fa-3x fas fa-city"></i>
+                    </span>
+                    <input type="text" style="margin-bottom:20px" name="city" id="cityWeather" class="form-control"
+                        placeholder="Enter Your City">
+                    <button id="getWeather" class="btn btn-primary" style="height: 52px">Get Your Current Weather and
+                        Forecasts!</button>
 
-        <!--weather results displayed below-->
-        <div id="showWeather">
+                </div>
+
+            </div>
+
+            <div class="col-md-8">
+                <!--weather results displayed below-->
+                <div id="showWeather">
+
+                </div>
+            </div>
+
 
         </div>
 
