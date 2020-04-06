@@ -25,10 +25,10 @@
     <div class="container" style="height:650px;">
 
         <div class="row" style="margin-bottom:20px;">
-           <!--was able to set up two columsn, but I need to create borders and/or background colors and a heading for the column on the right-->
-           <!--I want to create a sub-row on the left for a series of auto-search cities-->
-           
-            <div class="col-md-4">
+            <!--was able to set up two columms, but I need to create borders and/or background colors and a heading for the column on the right-->
+            <!--I want to create a sub-row on the left for a series of auto-search cities-->
+
+            <div class="col-md-4" id="columns">
                 <h3 class="text-center text-primary">What City You Looking For, Traveller?</h3>
 
                 <div class="row form-group form-inline" id="rowDiv">
@@ -39,12 +39,29 @@
                         placeholder="Enter Your City">
                     <button id="getWeather" class="btn btn-primary" style="height: 52px">Get Your Current Weather and
                         Forecasts!</button>
-
                 </div>
+
+
+                <h2>Popular Destinations</h2>
+                <div class="row" id="popularDestinations" style="margin: 5px;">
+                    <ul class="list-group">
+                        <button class="list-group-item" id="newYork">New York</button>
+                        <button class="list-group-item" id="london">London</button>
+                        <button class="list-group-item" id="paris">Paris</button>
+                        <button class="list-group-item" id="barcelona">Barcelona</button>
+                        <button class="list-group-item" id="sydney">Sydney</button>
+                        <button class="list-group-item" id="riyadh">Riyadh</button>
+                        <button class="list-group-item" id="tokyo">Tokyo</button>
+                        <button class="list-group-item" id="shanghai">Shanghai</button>
+                        <button class="list-group-item" id="moscow">Moscow</button>
+                        <button class="list-group-item" id="johannesburg">Johannesburg</button>
+                    </ul>
+                </div>
+
 
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-8" id="columns">
                 <!--weather results displayed below-->
                 <div id="showWeather">
 
@@ -56,9 +73,13 @@
 
     </div>
 
-    <div class="footer" style="background-color:rgb(25, 61, 61); text-align: center; font-weight:bold; color:white;">
-        <p>Property of Joshua Benjamin, Copyright &copy; 2020</p>
+    <div class="container">
+        <div class="card-footer bg-transparent border-success"></div>
     </div>
+    </div>
+    <footer style="background-color:rgb(25, 61, 61); text-align: center; font-weight:bold; color:white;">
+        <p>Property of Joshua Benjamin, Copyright &copy; 2020</p>
+    </footer>
 
 
 

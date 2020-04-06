@@ -73,3 +73,4 @@ function display(data) {
         "<h3 style='padding-left:35px;'><strong>Am I Gonna Be Sweating in that Humidity? </strong>: " + data.main.humidity + "% </h3>" +
         "<h3 style='padding-left:35px;'><strong>Any mini-Tornados Happening? What's the Wind Speed?</strong>: " + data.wind.speed + " MpH</h3>";
 };
+

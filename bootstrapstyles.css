@@ -41,3 +41,15 @@ input[type="text"]{
 #getWeather {
     margin-bottom: 6.5px;
 }
+
+.row {
+    border: 3px solid rgba(54, 34, 85, 0.2);
+}
+
+#columns {
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+#popularDestinations {
+    border: 1px solid rgba(86, 61, 124, .2);
+}
