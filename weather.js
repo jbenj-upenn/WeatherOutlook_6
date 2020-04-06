@@ -65,10 +65,10 @@ $(document).ready(function () {
 
 function display(data) {
     return "<h2 'font-size:45px; font-weight: bold;' class='text-center'>You're Locked in to the Weather in " + data.name + " in that " + data.sys.country + " (country code...figure it out) </h2>" +
-        "<h3 style='padding-left:35px;'><strong>What's Coming from the Sky?</strong>:" + data.weather[0].main + "</h3>" +
+        "<h3 style='padding-left:35px;'><strong>What's Happening in the Sky?</strong>:" + data.weather[0].main + "</h3>" +
         "<h3 style='padding-left:35px;'><strong>Further Info on That?</strong>: <img src='http://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png'> " + data.weather[0].description + "</h3>" +
         "<h3 style='padding-left:35px;'><strong>How's that Thermostat Looking?</strong>: " + data.main.temp + " &deg;F</h3>" +
-        "<h3 style='padding-left:35px;'><strong>Gimme a Range: What's tshe Max?</strong>: " + data.main.temp_max + " &deg;F</h3>" +
+        "<h3 style='padding-left:35px;'><strong>Gimme a Range: What's the Max?</strong>: " + data.main.temp_max + " &deg;F</h3>" +
         "<h3 style='padding-left:35px;'><strong>How about the Min?</strong>: " + data.main.temp_min + " &deg;F</h3>" +
         "<h3 style='padding-left:35px;'><strong>Am I Gonna Be Sweating in that Humidity? </strong>: " + data.main.humidity + "% </h3>" +
         "<h3 style='padding-left:35px;'><strong>Any mini-Tornados Happening? What's the Wind Speed?</strong>: " + data.wind.speed + " MpH</h3>";
