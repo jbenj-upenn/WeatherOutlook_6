@@ -12,10 +12,13 @@ The User is prompted to enter the city name of her/his choice. After clicking "T
 6. Wind Speed
 7. Ten buttons utilize a callback function that allows a user to click on the popular cities associated with said buttons to return fast weather data
 
-Challenges remaining:
+### Challenges remaining:
 1. Implementation of a 5-day forecast for the city in question
 2. Search history of cities
 3. A "dashboard" that stores past searches
 4. Continued difficulty with consistently getting images into the README file
 
+### Images
+![screenshot_1](https://user-images.githubusercontent.com/59940368/80397788-b1e72e80-8884-11ea-8ef1-cbe2cd765633.png)
+![screenshot_2](https://user-images.githubusercontent.com/59940368/80397789-b1e72e80-8884-11ea-9d7d-c4120228184f.png)
 
