@@ -1,6 +1,9 @@
 # WeatherOutlook_6
 UPenn/Trilogy Coding Bootcamp assignment #6: create a weather app utilizing the API from openweathermap.org
 
+## Link
+https://jbenj-upenn.github.io/WeatherOutlook_6/
+
 Yet another challenging activity that required me to draw from a number of outside sources just to get this far. The app is designed for anyone travelling who needs to know specific weather-related information as quickly as possible. It draws on the APIs made available by https://www.openweathermap.org. 
 
 The User is prompted to enter the city name of her/his choice. After clicking "TAB" and "ENTER", the User is giving the following information:
